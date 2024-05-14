@@ -379,9 +379,48 @@ nav ul li{
     display: flex;
 }
 
-.logo1 img{
-    width: 80px;
-    height: 80px;
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-phone{
+  background: #29b474;
+  color: white;
+}
+
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github{
+  background: black;
+  color: white;
+}
+
+.fa-envelope{
+  background : red;
+  color: white ;
+}
+
+.fa-instagram{
+  background: #dd2a7b;
+  color: white;
+}
+
+.fa-whatsapp{
+  background: #03c03c;
+  color: white;
 }
 
 
