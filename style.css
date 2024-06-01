@@ -50,7 +50,6 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
-    list-style: none;
 }
 
 nav ul li{
@@ -138,6 +137,10 @@ nav ul li{
 }
 
 .my-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 500px;
     width: 550px;
 }
@@ -150,7 +153,7 @@ nav ul li{
 
 .slider img {
     width: 100%;
-    height: 500px;
+    height: 80%;
     position: absolute;
     top: 0;
     left: 0;
@@ -164,7 +167,7 @@ nav ul li{
     z-index: 1;
 }
 
-.nav-button {
+.nav-slide {
     text-align: center;
     position: relative;
 }
@@ -321,7 +324,6 @@ nav ul li{
     font-style: normal;
     font-size: 20px;
     font-weight: 200;
-    text-align: justify;
 }
 
 .row2{
@@ -375,48 +377,51 @@ nav ul li{
     padding: 30px;
 }
 
-.fa{
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+.logo1{
+    display: flex;
 }
 
+.logo1 img{
+    width: 80px;
+    height: 80px;
+}
+
+.fa{
+    padding: 10px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
 .fa:hover{
     opacity: 0.7;
 }
-
 .fa-phone{
-  background: #29b474;
-  color: white;
+    background: #29b474;
+    color: white;
 }
-
 .fa-linkedin{
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
-
 .fa-github{
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
-
 .fa-envelope{
-  background : red;
-  color: white ;
+    background : red;
+    color: white ;
 }
-
 .fa-instagram{
-  background: #dd2a7b;
-  color: white;
+    background: #dd2a7b;
+    color: white;
 }
-
 .fa-whatsapp{
-  background: #03c03c;
-  color: white;
+    background: #03c03c;
+    color: white;
 }
 
 
@@ -499,7 +504,6 @@ nav ul li{
 
     .cover{
         width: 100%;
-        /* height: 70vh; */
     }
 
     .container{
@@ -562,9 +566,54 @@ nav ul li{
         font-weight: 100;
     }
 
-    .mypic{
+    .my-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
         width: 80%;
         height: 80%;
+    }
+
+    .slider {
+        width: 100%;
+        height: 510px;
+        position: relative;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slider img:first-child {
+        z-index: 0;
+    }
+
+    .slider img:nth-child(2) {
+        z-index: 1;
+    }
+
+    .nav-slide {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
     }
 
     .head{
